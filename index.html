@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="css/styles.css" rel="stylesheet"/>
 </head>
+
 <body>
 
     <!-- <p>Pepe</p>
@@ -16,12 +20,21 @@
     <input id="player1" type="text" class="inputDesign" placeholder="escribe tu nombre" />
      -->
 
-    <input name="nombre" type="text" placeholder="Nombre"/>
-    <input name="email" type="text" placeholder="Email"/>
-    <input name="apellido" type="text" placeholder="Apellido"/>
+    <div class="contenedorFormulario">
 
+        <div class="inputsFormulario">
 
-    
+            <input name="nombre" type="text" placeholder="Nombre" />
+            <input name="email" type="text" placeholder="Email" />
+            <input name="apellido" type="text" placeholder="Apellido" />
+
+        </div>
+
+        <div class="botonDesign" id="boton">GUARDA DATOS</div>
+
+    </div>
+
     <script src="js/main.js"></script>
 </body>
+
 </html>

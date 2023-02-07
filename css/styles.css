@@ -1,0 +1,42 @@
+
+.contenedorFormulario {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputsFormulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonDesign {
+
+    height: 2em;
+    width: 10em;
+
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: midnightblue;
+    
+    transition: 0.2s;
+    cursor: pointer;
+
+    border-radius: 1em;
+}
+
+.botonDesign:hover {
+
+    transition: 0.2s;
+
+    background-color: lightblue;
+}

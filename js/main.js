@@ -27,13 +27,36 @@
 
 //Estoy transformando la HTMLCOLLECTION que obtengo al tener los inputs en un array, para
 //después, poder mapearlo.
+
+let datosUser = {
+    nombre: '',
+    email: '',
+    apellido: ''
+}
+
+let boton = document.getElementById("boton");
+
 let inputs = Array.from(document.getElementsByTagName("input"));
 
 inputs.map(
     (input) => {
-        input.addEventListener('change', ()=>{
-            console.log(`Estas escribiendo en ${input.name} 
-            y has escrito ${input.value}`);
+        input.addEventListener('input', ()=>{
+
+            for(let inputEscribiendo in datosUser){
+                if(input.name === inputEscribiendo){
+                    datosUser[inputEscribiendo] = input.value;
+                }
+            }
+            
         })
     }
 )
+
+boton.addEventListener("click", ()=>{
+
+    console.log(datosUser);
+    //Primero comprobamos los datos que vamos a guardar.... 
+    sessionStorage.setItem("usuario", JSON.stringify(datosUser));
+
+
+})
